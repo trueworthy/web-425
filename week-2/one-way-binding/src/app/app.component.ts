@@ -1,3 +1,13 @@
+/*
+; ============================================
+; Title:  app.component.ts
+; Author: Richard Krasso
+; Modified By: Lea Trueworthy
+; Date:   20 July 2019
+; Description: Exercise 2.2 - One-Way Binding
+;=============================================  
+*/
+
 import { Component } from '@angular/core';
 
 @Component({
