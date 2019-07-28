@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'trueworthy-query-params';
+  title = 'trueworthy query params';
+  userId = 1726;
 }

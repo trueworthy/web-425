@@ -6,7 +6,7 @@ import { ActivatedRoute } from "@angular/router";
   template: `
     <div class="container">
       <div class="row">
-        <h2>User Detail for User: {{ userId }}</h2>
+        <h2>User Detail for User:<i> {{ userId }}</i></h2>
       </div>
     </div>
   `,
@@ -15,7 +15,10 @@ import { ActivatedRoute } from "@angular/router";
       margin-top: 20px; 
     }
     h2 {
-      color: darkorange;
+      color: black;
+    }
+    i {
+      color: purple;
     }
   `]
 })

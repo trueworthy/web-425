@@ -5,15 +5,15 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div class="container">
       <div class="row">
-        <h4>Help I'm Lost!</h4>
+        <h2>Help I'm LOST</h2>
       </div>
     </div>
   `,
   styles: [`
-    .container{
-      margin-top: 20px;
+    .container {
+      margin-top: 20px; 
     }
-    h4 {
+    h2 {
       color: red;
     }
   `]
