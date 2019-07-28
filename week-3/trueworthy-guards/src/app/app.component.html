@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <style>
+    div {background-color: powderblue;}
+    h1   {color: blue;}
+    nav    {
+      background-color: springgreen;
+      color: red;}
+    </style>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a [routerLink]="['/']" class="nav-link">Home</a>
+      </li>
+      <li>
+        <a [routerLink]="['/product']" class="nav-link">Product Detail</a>
+      </li>
+      <li>
+        <a [routerLink]="['/login']" class="nav-link">Login</a>
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
