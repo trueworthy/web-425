@@ -17,7 +17,7 @@ import { FormControl } from "@angular/forms";
       <div class="row">
         <div class="col">
           <h2>Handling Form Events with Observables</h2>
-          <h3>Trueworthy</h3>
+          <h3 class="lastname">Trueworthy</h3>
           <br />
           <div class="form-group">
             <label for="txtStockPrice">Stock Price: </label>
@@ -40,8 +40,14 @@ import { FormControl } from "@angular/forms";
   styles: [`
     .txt-bold {
       font-weight: bold;
+      background-color:lightgreen;
+      border:1px; 
+      border-style:solid; 
+      border-color:darkgreen;
     }
-    
+    .lastname {
+      color:darkgreen;
+    }
   `]
 })
 export class AppComponent {
