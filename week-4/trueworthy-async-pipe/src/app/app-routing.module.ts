@@ -3,10 +3,11 @@
 ; Title:  app-routing.module.ts
 ; Author: Richard Krasso
 ; Modified By: Lea Trueworthy
-; Date: August 2019
-; Description: Assignment 4.2
+; Date:   04 August 2019
+; Description: Assignment 4.4
 ;=============================================
 */
+
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

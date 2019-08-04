@@ -1,3 +1,13 @@
+/*
+; ============================================
+; Title:  app.module.ts
+; Author: Richard Krasso
+; Modified By: Lea Trueworthy
+; Date:   02 August 2019
+; Description: Assignment 4.3
+;=============================================
+*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

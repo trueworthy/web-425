@@ -3,8 +3,8 @@
 ; Title:  app.module.ts
 ; Author: Richard Krasso
 ; Modified By: Lea Trueworthy
-; Date:   August 2019
-; Description: Assignment 4.2
+; Date:   04 August 2019
+; Description: Assignment 4.4
 ;=============================================
 */
 
@@ -13,18 +13,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserComponent } from './user/user.component';
+import { ReactiveFormsModule } from '@angular/forms'
+import { FruitService } from './fruit.service'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UserComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [FruitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

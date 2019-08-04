@@ -3,8 +3,8 @@
 ; Title:  app.component.spec.ts
 ; Author: Richard Krasso
 ; Modified By: Lea Trueworthy
-; Date:   02 August 2019
-; Description: Assignment 4.3
+; Date:   04 August 2019
+; Description: Assignment 4.4
 ;=============================================
 */
 
@@ -32,6 +32,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Trueworthy Async Pipe!');
   }));
 });

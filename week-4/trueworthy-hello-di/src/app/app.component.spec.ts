@@ -1,3 +1,13 @@
+/*
+; ============================================
+; Title:  app.component.spec.ts
+; Author: Richard Krasso
+; Modified By: Lea Trueworthy
+; Date:   August 2019
+; Description: Assignment 4.2
+;=============================================
+*/
+
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';

@@ -1,3 +1,13 @@
+/*
+; ============================================
+; Title:  app.component.ts
+; Author: Richard Krasso
+; Modified By: Lea Trueworthy
+; Date:   02 August 2019
+; Description: Assignment 4.3
+;=============================================
+*/
+
 import { Component } from '@angular/core';
 import { debounceTime } from "rxjs/operators";
 import { FormControl } from "@angular/forms";
