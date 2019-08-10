@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+/* Form Styles */
+.frm-login { width: 50%;  margin: 0 auto; }
+.frm-login-panel { border: 6px dashed black; }
+.frm-login-header { background-color:greenyellow; }
+.frm-login-toolbar { background-color: green; color: white; font-family: 'Vast Shadow', cursive;}
+.frm-login-body { display: flex; flex-direction: column; margin-top: 25px;}
+.btn-login { background-color:greenyellow; color: black; font-family: 'Vast Shadow', cursive;}
+.frm-login-actions { text-align: center;}
+
+/* Global */
+.wrapper { width: 100%; margin-top: 10%; }
+
