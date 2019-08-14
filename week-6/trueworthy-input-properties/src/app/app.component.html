@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <mat-toolbar class="menu" role="header" color="primary">
+    
+    <mat-toolbar-row>
+      <button mat-button class="toolbar__icon-button mat-button">
+        <mat-icon>web</mat-icon>
+        <span style="margin-left: 5px !important;">WEB 425</span>
+      </button>
+      <button mat-button class="mat-button">
+        About
+      </button>
+      <button mat-button class="mat-button">
+        Contact Us
+      </button>
+
+      <div fxFlex></div>
+
+      <!-- User Profile -->
+      <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+        
+        <mat-icon>account_circle</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>perm_contact_calendar</mat-icon>
+          <span>My Profile</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout</span>
+        </button>
+
+      </mat-menu>
+    </mat-toolbar-row>
+
+  </mat-toolbar>
+
+  <div class="parent" fxLayout="row">
+      <div class="left" fxFlex="20%">
+    
+          <div class="header">
+              Ipsum
+          </div>
+          <div class="box">
+              <p>Side-eyes your "jerk" other hand while being petted being gorgeous with belly side up or if it fits, i sits
+                  fall over dead (not really but gets sypathy). Fart in owners food friends are not food or then cats take over
+                  the world so i show my fluffy belly but it's a trap! if you pet it i will tear up your hand stick butt in
+                  face.</p>
+            </div>
+        </div>
+
+        
+        <div class="right" fxFlex="80%">
+          
+            <div class="header">
+                <input type="text" placeholder="Enter Stock Here" (change)="onChangeEvent($event)">
+            </div>
+            <div class="box2">
+    
+                <h4><app-order [stockSymbol]="stock" [quantity]="numberOfShares"></app-order></h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
