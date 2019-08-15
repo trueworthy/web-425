@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body color="$accent">
+  <mat-toolbar class="menu" role="header" color="primary">
+    
+    <mat-toolbar-row>
+      <button mat-button class="toolbar__icon-button mat-button">
+        <mat-icon>web</mat-icon>
+        <span style="margin-left: 5px !important;">WEB 425</span>
+      </button>
+      <button mat-button class="mat-button">
+        About
+      </button>
+      <button mat-button class="mat-button">
+        Contact Us
+      </button>
+
+      <div fxFlex></div>
+
+      <!-- User Profile -->
+      <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+        
+        <mat-icon>account_circle</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>perm_contact_calendar</mat-icon>
+          <span>My Profile</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout</span>
+        </button>
+
+      </mat-menu>
+    </mat-toolbar-row>
+
+  </mat-toolbar>
+
+  <div class="parent" fxLayout="row">
+      <div class="left" fxFlex="20%" >
+    
+          <div class="header">
+              Hello
+          </div>
+          <div class="box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        
+        <div class="right" fxFlex="80%">
+            <div class="header">
+                Output
+            </div>
+            <div class="box">
+              AppComponent received: {{ priceQuote?.stockSymbol }} {{ priceQuote?.lastPrice | currency: 'USD' }}
+              <app-price-quote (lastPrice)="priceQuoteHandler($event)"></app-price-quote>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
