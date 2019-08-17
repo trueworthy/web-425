@@ -1,10 +1,15 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule } from "@angular/material";
 import { ChildComponent } from './child/child.component';
-import { FlexLayoutModule } from "@angular/flex-layout";
 import {FormsModule} from "@angular/forms";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FlexLayoutModule} from "@angular/flex-layout";
+import { MatTabsModule } from '@angular/material';
+
 
 
 @NgModule({
@@ -14,8 +19,14 @@ import {FormsModule} from "@angular/forms";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
     FormsModule,
-    FlexLayoutModule
+    MatTabsModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
