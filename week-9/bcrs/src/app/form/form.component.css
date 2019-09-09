@@ -10,6 +10,8 @@
   .form-title {
     text-align: center;
     font-weight: lighter;
+    padding-bottom: 10px;
+    padding-top: 20px;
   }
   
   h2 {
